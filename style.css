@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ВЕДУЩИЙ */
+
+#hostView {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.host-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+
+.status {
+    margin-top: 35px;
+    font-size: 13px;
+    color: #e7b84b;
+}
+
+.status.online {
+    color: #39d98a;
+}
+
+.status.offline {
+    color: #ff4545;
+}
+
+.signal-button {
+    width: min(75vw, 330px);
+    height: min(75vw, 330px);
+    border-radius: 50%;
+    border: 8px solid #ff7777;
+    background: #ed1717;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-top: 45px;
+    cursor: pointer;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.35);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.signal-button:active {
+    transform: scale(0.96);
+}
+
+.signal-button:disabled {
+    opacity: 0.5;
+}
+
+.message {
+    color: #888;
+    font-size: 14px;
+    margin-top: 35px;
+}
+
+/* СВЕТОВИК */
+
+#lightView {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.light-screen {
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.1s linear;
+}
+
+.light-screen.active {
+    background: #ff0000;
+}
+
+.light-title {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    opacity: 0.5;
+}
+
+.light-status {
+    font-size: clamp(25px, 7vw, 65px);
+    font-weight: 900;
+    text-align: center;
+    margin-top: 35px;
+    padding: 20px;
+}
+
+.light-actions {
+    margin-top: 50px;
+}
+
+.reset-button {
+    padding: 20px 45px;
+    border: 2px solid #fff;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+max-width: 500px {
+    .logo {
+        font-size: 25px;
+    }
+
+    .signal-button {
+        font-size: 28px;
+    }
+}

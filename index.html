@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>STAGE SIGNAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Интерфейс ведущего -->
+    <main id="hostView" class="hidden">
+        <div class="host-container">
+            <div class="logo">STAGE SIGNAL</div>
+            <div class="subtitle">ПУЛЬТ ВЕДУЩЕГО</div>
+
+            <div id="hostStatus" class="status">
+                Подключение...
+            </div>
+
+            <button id="signalButton" class="signal-button">
+                <span>СИГНАЛ</span>
+            </button>
+
+            <div id="hostMessage" class="message">
+                Нажмите кнопку для подачи сигнала
+            </div>
+        </div>
+    </main>
+
+    <!-- Интерфейс световика -->
+    <main id="lightView" class="hidden">
+        <div id="lightScreen" class="light-screen">
+            <div class="light-title">STAGE SIGNAL</div>
+
+            <div id="lightStatus" class="light-status">
+                ОЖИДАНИЕ СИГНАЛА
+            </div>
+
+            <div id="lightActions" class="light-actions hidden">
+                <button id="resetButton" class="reset-button">
+                    СБРОСИТЬ
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
